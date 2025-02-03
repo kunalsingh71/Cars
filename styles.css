@@ -1,0 +1,195 @@
+/* ====== General Styles ====== */
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* ====== Header & Navigation ====== */
+header {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* ====== Hero Section / Slider ====== */
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url('images/bmw.jpg') no-repeat center/cover;
+}
+
+.slides img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+/* Parallax Scrolling Effect */
+.slider {
+    background-attachment: fixed;
+}
+
+/* ====== Forms (Login & Sign-Up) ====== */
+.form-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+button {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+/* Show Password Toggle */
+.password-toggle {
+    cursor: pointer;
+    color: #ffcc00;
+    font-size: 14px;
+}
+
+/* ====== Dark Mode ====== */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ====== Typing Animation ====== */
+#typingText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 50px;
+}
+
+/* ====== Image Hover Zoom Effect ====== */
+.slides img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* ====== Button Click Animation ====== */
+.clicked {
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+/* ====== Animated Menu ====== */
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: black;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    padding-top: 50px;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+#menuToggle {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* ====== Footer ====== */
+footer {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
