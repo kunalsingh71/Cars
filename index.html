@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unleashed Icons: The Top 10 Banned Cars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Orbitron:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <div class="cursor-headlight" id="cursor-headlight"></div>
+
+    <div id="message-box" class="hidden" role="alert" aria-live="polite"></div>
+
+    <header class="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <a href="#" class="text-2xl md:text-3xl font-orbitron text-white hover:text-primary-accent transition-colors duration-300 transform hover:scale-105" id="site-logo">
+                UNLEASHED ICONS
+            </a>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <ul class="hidden md:flex space-x-4 lg:space-x-8 items-center">
+                <li><a href="#home" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to Home section">Home<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li><a href="#the-cars" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to The Cars section">The Cars<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li><a href="#why-banned" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to Why Banned section">Why Banned?<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li><a href="#tech-showcase" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to Tech Showcase section">Tech Showcase<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li><a href="#community" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to Community section">Community<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li><a href="#my-forbidden-garage" class="text-base lg:text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 relative group" aria-label="Go to My Forbidden Garage">My Garage<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-accent group-hover:w-full transition-all duration-300"></span></a></li>
+                <li>
+                    <label class="toggle-switch" aria-label="Toggle dark and light mode">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 backdrop-blur-md py-4 transition-transform duration-300 -translate-y-full opacity-0" role="menu" aria-hidden="true">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#home" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to Home section">Home</a></li>
+                <li><a href="#the-cars" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to The Cars section">The Cars</a></li>
+                <li><a href="#why-banned" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to Why Banned section">Why Banned?</a></li>
+                <li><a href="#tech-showcase" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to Tech Showcase section">Tech Showcase</a></li>
+                <li><a href="#community" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to Community section">Community</a></li>
+                <li><a href="#my-forbidden-garage" class="text-lg font-open-sans text-text-body hover:text-primary-accent transition-colors duration-300 block py-2" role="menuitem" aria-label="Go to My Forbidden Garage">My Garage</a></li>
+                <li class="pt-4">
+                    <label class="toggle-switch" aria-label="Toggle dark and light mode">
+                        <input type="checkbox" id="theme-toggle-mobile">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative h-screen flex items-center justify-center text-center text-white hero-bg-parallax">
+            <div class="hero-overlay"></div>
+            <div class="hero-content p-4 md:p-8">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-orbitron mb-4 animate-fade-in-up">
+                    UNLEASH THE FORBIDDEN. <br class="sm:hidden"> DISCOVER THE LEGENDS.
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl font-open-sans mb-8 animate-fade-in-up delay-200">
+                    Explore the world's most exclusive and controversial banned supercars.
+                </p>
+                <a href="#the-cars" class="btn-primary inline-block animate-fade-in-up delay-400" aria-label="Explore The Forbidden Collection">
+                    Explore The Forbidden Collection
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed mb-12">The Allure of the Forbidden</h2>
+                <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-12">
+                    These are not just cars; they are statements. Machines born of uncompromised engineering and audacious design, deemed too extreme, too loud, or too exclusive for public roads. Dive into their stories, understand their prowess, and uncover the reasons they were banished from the streets.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="flex flex-col items-center p-6 card">
+                        <i class="fas fa-car text-primary-accent text-4xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-roboto-condensed text-white mb-2">10 Cars</h3>
+                        <p class="text-text-body">Legendary machines profiled</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 card">
+                        <i class="fas fa-gavel text-secondary-accent text-4xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-roboto-condensed text-white mb-2">Countless Controversies</h3>
+                        <p class="text-text-body">The reasons behind their bans</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 card">
+                        <i class="fas fa-rocket text-primary-accent text-4xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-roboto-condensed text-white mb-2">Untamed Power</h3>
+                        <p class="text-text-body">Performance beyond limits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="the-cars" class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed text-center mb-12">Featured Forbidden Machines</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="#ferrari-fxx" class="group card overflow-hidden block" aria-label="View details for Ferrari FXX">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Ferrari+FXX" alt="Ferrari FXX">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Ferrari FXX / FXX-K Evo</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Track-Only Experimental Program</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#pagani-zonda-r" class="group card overflow-hidden block" aria-label="View details for Pagani Zonda R">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Pagani+Zonda+R" alt="Pagani Zonda R">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Pagani Zonda R / Revolucion</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Pure Track-Only Design</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#lamborghini-sesto-elemento" class="group card overflow-hidden block" aria-label="View details for Lamborghini Sesto Elemento">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Lamborghini+Sesto" alt="Lamborghini Sesto Elemento">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Lamborghini Sesto Elemento</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Extreme Lightweight Special</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#aston-martin-vulcan" class="group card overflow-hidden block" aria-label="View details for Aston Martin Vulcan">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Aston+Martin+Vulcan" alt="Aston Martin Vulcan">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Aston Martin Vulcan</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Track-Only Design</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#bugatti-bolide" class="group card overflow-hidden block" aria-label="View details for Bugatti Bolide">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Bugatti+Bolide" alt="Bugatti Bolide">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Bugatti Bolide</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Extreme Track-Only Hypercar</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#mclaren-gtr" class="group card overflow-hidden block" aria-label="View details for McLaren P1 GTR / Senna GTR">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=McLaren+GTR" alt="McLaren P1 GTR">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">McLaren P1 GTR / Senna GTR</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Track-Only Derivatives</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#mercedes-clk-gtr" class="group card overflow-hidden block" aria-label="View details for Mercedes-Benz CLK GTR Straßenversion">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=CLK+GTR" alt="Mercedes-Benz CLK GTR">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Mercedes-Benz CLK GTR Straßenversion</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: US Restrictions (Homologation)</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#tvr-cerbera-speed-12" class="group card overflow-hidden block" aria-label="View details for TVR Cerbera Speed 12">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=TVR+Speed+12" alt="TVR Cerbera Speed 12">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">TVR Cerbera Speed 12</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Deemed Too Extreme by Manufacturer</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#jaguar-xj220s" class="group card overflow-hidden block" aria-label="View details for Jaguar XJ220S">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Jaguar+XJ220S" alt="Jaguar XJ220S">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Jaguar XJ220S</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Limited Edition, US Import Restrictions</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#lamborghini-strosek-diablo" class="group card overflow-hidden block" aria-label="View details for Lamborghini Strosek Diablo">
+                        <img class="lazy-load w-full h-48 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300" data-src="https://placehold.co/600x400/3a3a3a/e0e0e0?text=Strosek+Diablo" alt="Lamborghini Strosek Diablo">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-roboto-condensed text-white mb-2">Lamborghini Strosek Diablo</h3>
+                            <p class="text-text-body text-sm mb-4">Banned For: Modified Vehicle Non-Compliance (US)</p>
+                            <div class="text-primary-accent text-lg font-bold group-hover:underline transition-all duration-300">
+                                View Details <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ferrari-fxx" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="ferrari-fxx">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Ferrari+FXX-K+Evo" alt="Ferrari FXX-K Evo">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Ferrari FXX Program:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Ultimate Track Day Kings</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Est. 217 mph (350 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 2.5 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~1036 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">6.3L V12 + KERS</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Ferrari FXX, FXX-K, and FXX-K Evo represent an exclusive, track-only development program for Ferrari's most valued clients. These are not race cars for a specific series but rolling laboratories for future Ferrari technologies. Based loosely on road cars like the Enzo (for the FXX) and LaFerrari (for the FXX-K), they are stripped-down, aerodynamically aggressive machines designed for blistering lap times. Owners participate in Ferrari-organized track events worldwide, with full factory support, contributing data and feedback. They feature advanced aerodynamics generating immense downforce, sophisticated telemetry, and hybrid systems (in the K models) for an unparalleled driving experience far beyond any road-legal Ferrari.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Extremely Limited (e.g., FXX-K: 40 units)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="ferrari-fxx-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Track-Only Experimental Program</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Never designed for road use. Lacks essential road-legal components (e.g., standard lights, indicators, airbags suitable for road conditions, emissions controls like catalytic converters). Extreme noise levels, aggressive aerodynamics (fixed wings, splitters), and slick tires make it unsuitable and illegal for public roads. These cars are typically stored and maintained by Ferrari, transported to tracks for owner events. Not homologated for any road use.
+                    </p>
+                </div>
+
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=FXX-K+Gallery+1" alt="Ferrari FXX-K Evo Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=FXX-K+Gallery+2" alt="Ferrari FXX-K Evo Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=FXX-K+Gallery+3" alt="Ferrari FXX-K Evo Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <canvas id="ferrari-fxx-3d-canvas" class="threejs-canvas"></canvas>
+                </div>
+
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The FXX program laid the groundwork for Ferrari's hybrid hypercars and pushed the boundaries of track-focused vehicle development. Its exclusivity and the unique owner experience have solidified its place as a legendary series in automotive history, influencing future extreme track machines from other manufacturers.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card mb-12">
+                    <button id="like-ferrari-fxx" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Ferrari FXX">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="ferrari-fxx-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-ferrari-fxx" class="save-button btn-primary flex items-center" aria-label="Save Ferrari FXX to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+
+                <div id="ferrari-fxx-comments" class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Comments</h4>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-md">
+                        <div id="ferrari-fxx-comments-list" class="space-y-4 mb-6">
+                            </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <input type="text" id="ferrari-fxx-comment-input" placeholder="Add a comment..." class="flex-grow p-3 rounded-lg bg-background text-text-body border border-card-border focus:outline-none focus:ring-2 focus:ring-primary-accent" aria-label="Comment input for Ferrari FXX">
+                            <button id="ferrari-fxx-post-comment" class="btn-primary" aria-label="Post comment">Post Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagani-zonda-r" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="pagani-zonda-r">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Pagani+Zonda+R" alt="Pagani Zonda R">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Pagani Zonda R:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Art of Extreme Performance</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Over 217 mph (350 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 2.7 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~740 hp (Zonda R)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Mercedes-Benz AMG 6.0L V12</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Pagani Zonda R (and its even more extreme sibling, the Zonda Revolucion) is a pure expression of track performance, sharing only about 10% of its components with the road-going Zonda F. Horacio Pagani's vision was to create the ultimate track machine without the constraints of road legality or racing regulations. Built around a carbon-titanium monocoque, it features a Mercedes-AMG V12 derived from the CLK GTR's race engine, a sequential gearbox, and highly advanced aerodynamics including a large adjustable rear wing and F1-style DRS. Its lightweight construction and powerful engine deliver a raw, visceral driving experience, with a soundtrack to match its aggressive intent.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Very Limited (e.g., Zonda R: 15 units)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="pagani-zonda-r-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Track-Only Design</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Conceived purely for track use. Lacks all necessary road-legal equipment (emissions controls, road-spec lights, mirrors, airbags, noise mufflers). Its extreme aerodynamic elements, minimal ground clearance, and deafening exhaust note are incompatible with public road regulations. Not submitted for homologation as a road car. Some Zonda models faced challenges becoming road-legal in the US initially due to airbag regulations and crash testing costs, but the Zonda R was never intended for that path.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Zonda+R+Gallery+1" alt="Pagani Zonda R Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Zonda+R+Gallery+2" alt="Pagani Zonda R Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Zonda+R+Gallery+3" alt="Pagani Zonda R Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Pagani Zonda R coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Zonda R stands as a testament to Pagani's commitment to extreme performance and artistry, unburdened by road or race regulations. It pushed the boundaries of what a track-only hypercar could be, inspiring a new generation of exclusive, non-homologated machines.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-pagani-zonda-r" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Pagani Zonda R">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="pagani-zonda-r-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-pagani-zonda-r" class="save-button btn-primary flex items-center" aria-label="Save Pagani Zonda R to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lamborghini-sesto-elemento" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="lamborghini-sesto-elemento">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Lamborghini+Sesto+Elemento" alt="Lamborghini Sesto Elemento">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Lamborghini Sesto Elemento:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Carbon Fiber Featherweight</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Over 200 mph (322 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 2.5 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~570 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">5.2L V10</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Meaning "Sixth Element" in Italian (referring to carbon, the sixth element on the periodic table), the Sesto Elemento is a masterpiece of lightweight engineering. Weighing an astonishing 999 kg (2,202 lbs), it boasts an incredible power-to-weight ratio. Its chassis, body panels, suspension components, and even driveshaft are crafted from advanced carbon fiber reinforced plastics. Powered by the Gallardo's V10 engine and featuring permanent all-wheel drive, its performance is explosive, with acceleration that pins you to the minimalist carbon fiber seats. The interior is stripped bare, with no traditional seats but rather foam padding directly on the carbon monocoque.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Extremely Limited (officially 20 units, possibly fewer built)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="lamborghini-sesto-elemento-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Track-Only Lightweight Special</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Designed exclusively for track use. Its radical lightweight construction and focus on performance mean it lacks essential road safety features (airbags, full lighting, crash structures compliant with road regulations) and emissions equipment. The aggressive, minimalist design does not meet pedestrian safety or general roadworthiness standards. Not homologated for any road use.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Sesto+Gallery+1" alt="Lamborghini Sesto Elemento Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Sesto+Gallery+2" alt="Lamborghini Sesto Elemento Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Sesto+Gallery+3" alt="Lamborghini Sesto Elemento Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Lamborghini Sesto Elemento coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Sesto Elemento showcased Lamborghini's mastery of carbon fiber and extreme weight reduction, influencing future lightweight designs across the automotive industry. It remains a striking example of form following function in pursuit of ultimate track performance.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-lamborghini-sesto-elemento" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Lamborghini Sesto Elemento">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="lamborghini-sesto-elemento-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-lamborghini-sesto-elemento" class="save-button btn-primary flex items-center" aria-label="Save Lamborghini Sesto Elemento to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="aston-martin-vulcan" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="aston-martin-vulcan">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Aston+Martin+Vulcan" alt="Aston Martin Vulcan">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Aston Martin Vulcan:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">A V12 Track-Day Volcano</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Over 200 mph (322 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Under 3.0 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~820 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">7.0L Naturally Aspirated V12</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Aston Martin Vulcan is a rear-wheel-drive, track-only hypercar powered by a monstrous naturally aspirated 7.0-liter V12. With a carbon fiber monocoque, integrated FIA-compliant roll cage, and pushrod suspension, it’s built for serious track work. Owners were offered a comprehensive driver training program, progressing through various Aston Martin models before unleashing the Vulcan's full potential. Its aerodynamics are extreme, generating more downforce than the Le Mans-winning Vantage GTE. The driving experience is visceral, dominated by the V12's roar and the car's immense grip.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            24 units
+                        </p>
+                    </div>
+                </div>
+
+                <div id="aston-martin-vulcan-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Track-Only Design</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Built solely for track use and not compliant with road regulations. Lacks road-legal lighting, emissions systems, and other safety features required for public roads. Its extreme aero, ride height, and noise levels are unsuitable for street driving.
+                        <br><br>
+                        **Noteworthy Exception:** One Vulcan was famously made road-legal by British engineering firm RML Group after 18 months of extensive modifications (new lights, raised ride height, emissions compliance, different mirrors, wipers etc.), but this is a unique case, not factory intent.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Vulcan+Gallery+1" alt="Aston Martin Vulcan Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Vulcan+Gallery+2" alt="Aston Martin Vulcan Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Vulcan+Gallery+3" alt="Aston Martin Vulcan Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Aston Martin Vulcan coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Vulcan represents Aston Martin's bold venture into the realm of extreme track-only hypercars, offering an unparalleled driving experience and solidifying its position among the most exclusive and powerful machines ever produced by the marque.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-aston-martin-vulcan" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Aston Martin Vulcan">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="aston-martin-vulcan-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-aston-martin-vulcan" class="save-button btn-primary flex items-center" aria-label="Save Aston Martin Vulcan to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bugatti-bolide" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="bugatti-bolide">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Bugatti+Bolide" alt="Bugatti Bolide">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Bugatti Bolide:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The W16 Unleashed, Unchained</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">(Simulated) >310 mph (500 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">(Simulated) 2.17 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~1578 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">8.0L Quad-Turbocharged W16</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Bugatti Bolide is the ultimate track-only expression of Bugatti's legendary W16 engine. Stripped of the luxury and road-going constraints of the Chiron, the Bolide is a raw, lightweight (around 1,450 kg dry) hypercar focused entirely on circuit dominance. It features a completely new carbon monocoque, radical aerodynamics generating immense downforce (e.g., nearly 3 tonnes at speed), and F1-inspired safety features. Bugatti claims it can lap Le Mans faster than LMP1 cars in simulation. Its performance figures are astronomical, designed to push the boundaries of what's possible on a racetrack.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            40 units
+                        </p>
+                    </div>
+                </div>
+
+                <div id="bugatti-bolide-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Extreme Track-Only Hypercar</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Developed exclusively as a track vehicle. Does not meet any road-legal requirements for safety, emissions, lighting, or noise. Its design, including the X-shaped taillights, extreme aerodynamic components, and minimal ground clearance, is optimized purely for track performance and would be illegal and impractical on public roads. So fast, it's claimed to be "too fast for most FIA-approved tracks" in its low-drag configuration.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Bolide+Gallery+1" alt="Bugatti Bolide Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Bolide+Gallery+2" alt="Bugatti Bolide Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Bolide+Gallery+3" alt="Bugatti Bolide Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Bugatti Bolide coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Bugatti Bolide pushes the boundaries of hypercar performance, demonstrating the extreme potential of the W16 engine when unconstrained by road regulations. It's a statement of engineering prowess and a vision of future track-focused machines.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-bugatti-bolide" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Bugatti Bolide">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="bugatti-bolide-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-bugatti-bolide" class="save-button btn-primary flex items-center" aria-label="Save Bugatti Bolide to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="mclaren-gtr" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="mclaren-gtr">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=McLaren+P1+GTR" alt="McLaren P1 GTR">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">McLaren GTRs (P1 GTR & Senna GTR):</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">Race-Bred, Track Perfected</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 208 mph (335 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 2.7 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~814 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">4.0L Twin-Turbo V8</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The McLaren P1 GTR and Senna GTR are the track-only, even more extreme versions of their respective Ultimate Series road cars. Freed from road regulations, they feature more aggressive aerodynamics (fixed rear wings, larger splitters and diffusers generating significantly more downforce), slick tires, stripped-out interiors, and uprated powertrains. The P1 GTR, celebrating the F1 GTR's Le Mans victory, and the Senna GTR, named after the legendary F1 driver, offer an uncompromised track experience, with McLaren providing driver programs and support. They are designed to be the ultimate track tools for wealthy enthusiasts.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            P1 GTR: 58 units; Senna GTR: 75 units
+                        </p>
+                    </div>
+                </div>
+
+                <div id="mclaren-gtr-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Track-Only Derivatives</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Not street legal from the factory. Lack road-compliant emissions systems, lighting, and safety equipment (though they have racing safety gear). Their extreme aero, slick tires, and noise levels are unsuitable for public roads.
+                        <br><br>
+                        **Noteworthy Exception:** Specialist firms like Lanzante have famously converted a number of P1 GTRs (and some Senna GTRs) to road-legal specification through extensive engineering and modifications, but these are aftermarket conversions, not original factory status.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=McLaren+GTR+Gallery+1" alt="McLaren GTR Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=McLaren+GTR+Gallery+2" alt="McLaren GTR Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=McLaren+GTR+Gallery+3" alt="McLaren GTR Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of McLaren GTR coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The GTR versions of McLaren's Ultimate Series cars represent the pinnacle of track performance, demonstrating what's possible when engineering is unconstrained by road regulations. They are a direct lineage to McLaren's racing heritage and offer an exclusive, uncompromised driving experience.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-mclaren-gtr" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like McLaren GTR">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="mclaren-gtr-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-mclaren-gtr" class="save-button btn-primary flex items-center" aria-label="Save McLaren GTR to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="mercedes-clk-gtr" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="mercedes-clk-gtr">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Mercedes+CLK+GTR" alt="Mercedes-Benz CLK GTR Straßenversion">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Mercedes-Benz CLK GTR Straßenversion:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">Le Mans Racer for the Road (Barely)</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 199 mph (320 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 3.8 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~622 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">6.9L V12</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Mercedes-Benz CLK GTR "Straßenversion" (Street Version) was a homologation special built to allow the CLK GTR race car to compete in the FIA GT Championship. It shared much of its carbon fiber monocoque, suspension, and sequential transmission with the race car. The engine was enlarged to 6.9 liters for more torque and drivability. Despite its "street version" name, it was a thinly disguised race car with added creature comforts like air conditioning and leather upholstery (though some had tartan). Its looks were virtually identical to the dominant Le Mans racer, making it an instant icon.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            20 Coupés, 6 Roadsters (+2 prototypes)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="mercedes-clk-gtr-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Homologation Special with US Restrictions</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        While road-legal in Europe and other regions where it was sold, Mercedes-Benz did not officially modify or certify the CLK GTR to comply with United States safety and emissions regulations. Examples imported into the U.S. typically had to rely on the "Show or Display" exemption, which severely limits road use (e.g., 2,500 miles per year) and requires the car to be of significant historical or technological importance. Not technically "banned" globally, but its US legality is highly restrictive and not straightforward for general road use.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=CLK+GTR+Gallery+1" alt="Mercedes CLK GTR Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=CLK+GTR+Gallery+2" alt="Mercedes CLK GTR Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=CLK+GTR+Gallery+3" alt="Mercedes CLK GTR Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Mercedes-Benz CLK GTR coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The CLK GTR Straßenversion is a rare example of a pure race car barely adapted for the road, a direct result of homologation rules. Its aggressive styling and race-bred performance made it an instant legend, embodying the golden era of GT1 racing.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-mercedes-clk-gtr" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Mercedes-Benz CLK GTR">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="mercedes-clk-gtr-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-mercedes-clk-gtr" class="save-button btn-primary flex items-center" aria-label="Save Mercedes-Benz CLK GTR to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tvr-cerbera-speed-12" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="tvr-cerbera-speed-12">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=TVR+Cerbera+Speed+12" alt="TVR Cerbera Speed 12">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">TVR Cerbera Speed 12:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Beast Too Wild to Tame</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Potentially 240 mph (386 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Under 3.0 seconds (estimated)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Estimated ~800-960 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">7.7L V12</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Originally Project 7/12, the TVR Cerbera Speed 12 was intended to be the world's fastest road car and a GT1 endurance racer. Its monstrous 7.7-liter V12 engine, effectively two of TVR's Speed Six engines mated together, was said to produce close to 1000 horsepower. The car was incredibly light and brutally powerful. Development was plagued by issues, and GT1 regulations changed. When then-owner Peter Wheeler drove a near-production prototype home, he famously deemed it "unusable on the road" due to its overwhelming power and ferocity, even for an experienced racer like himself.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Only a handful of prototypes/race cars; 1 road car effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="tvr-cerbera-speed-12-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Deemed Too Extreme by Manufacturer</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Production plans for the road car were cancelled by TVR itself because it was considered simply too powerful and dangerous for public road use. It lacked common safety aids like ABS and traction control found on less powerful cars. Deposits were returned. The car was never homologated or certified for road use beyond the initial development prototypes. It remains a legendary "what if" in automotive history.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Speed+12+Gallery+1" alt="TVR Cerbera Speed 12 Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Speed+12+Gallery+2" alt="TVR Cerbera Speed 12 Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Speed+12+Gallery+3" alt="TVR Cerbera Speed 12 Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of TVR Cerbera Speed 12 coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The TVR Cerbera Speed 12 remains a legendary "what if" in automotive history, a car so extreme its own manufacturer deemed it too dangerous for the road. It embodies the raw, uncompromising spirit of TVR and highlights the fine line between ultimate performance and road legality.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-tvr-cerbera-speed-12" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like TVR Cerbera Speed 12">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="tvr-cerbera-speed-12-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-tvr-cerbera-speed-12" class="save-button btn-primary flex items-center" aria-label="Save TVR Cerbera Speed 12 to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="jaguar-xj220s" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="jaguar-xj220s">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Jaguar+XJ220S" alt="Jaguar XJ220S">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Jaguar XJ220S:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Le Mans Contender Unleashed</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 228 mph (367 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Approx. 3.3 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">~690 hp</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">3.5L Twin-Turbo V6</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Jaguar XJ220S was a limited-production, road-legal version of the XJ220-C race car, built by Tom Walkinshaw Racing (TWR) to commemorate its Le Mans class win (which was later controversially revoked). The 'S' featured exposed headlights (replacing the pop-ups of the standard XJ220), extensive use of carbon fiber for body panels making it lighter, and a significantly more powerful version of the twin-turbo V6 engine, boosted to around 690 hp. It also had a fixed rear wing and a more aggressive aerodynamic package, making it a more focused and potent machine than the already rapid XJ220.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            6 units (+ original XJ220C race cars it was based on)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="jaguar-xj220s-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Limited Edition, US Import Restrictions</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Due to its extremely limited production run (only 6 units) and modifications from the "standard" XJ220, the XJ220S was reportedly banned from import/road use in the United States by the NHTSA. The specific reasons likely revolve around its non-compliance with US safety and emissions standards for such a low-volume, modified vehicle that wasn't specifically certified for the US market. It could potentially be imported now under the 25-year rule.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=XJ220S+Gallery+1" alt="Jaguar XJ220S Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=XJ220S+Gallery+2" alt="Jaguar XJ220S Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=XJ220S+Gallery+3" alt="Jaguar XJ220S Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Jaguar XJ220S coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The XJ220S is a testament to Jaguar's racing ambition and engineering prowess, a track-focused beast derived from a Le Mans contender. Its rarity and the controversy surrounding its US legality add to its mystique, making it a highly sought-after collector's item.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-jaguar-xj220s" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Jaguar XJ220S">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="jaguar-xj220s-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-jaguar-xj220s" class="save-button btn-primary flex items-center" aria-label="Save Jaguar XJ220S to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lamborghini-strosek-diablo" class="py-16 md:py-24 bg-background px-4 md:px-8" data-car-id="lamborghini-strosek-diablo">
+            <div class="container mx-auto">
+                <div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-12 shadow-lg">
+                    <img class="lazy-load w-full h-full object-cover" data-src="https://placehold.co/1200x600/3a3a3a/e0e0e0?text=Lamborghini+Strosek+Diablo" alt="Lamborghini Strosek Diablo">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8 text-white">
+                        <h2 class="text-3xl md:text-5xl font-orbitron leading-tight">Lamborghini Strosek Diablo:</h2>
+                        <h3 class="text-xl md:text-3xl font-roboto-condensed text-primary-accent">The Devil in a Daring Disguise</h3>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+                    <div class="p-4 card">
+                        <i class="fas fa-tachometer-alt text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Top Speed</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Over 200 mph (322 km/h)</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-stopwatch text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">0-100 km/h</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Under 4.0 seconds</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-horse-head text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Power</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Similar to or slightly above standard Diablo</p>
+                    </div>
+                    <div class="p-4 card">
+                        <i class="fas fa-engine text-primary-accent text-2xl mb-2" aria-hidden="true"></i>
+                        <p class="text-sm text-text-body">Engine</p>
+                        <p class="text-lg md:text-xl font-bold text-white">Lamborghini V12 (5.7L or 6.0L)</p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 mb-12">
+                    <div class="lg:col-span-2">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Features & Performance:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            The Lamborghini Strosek Diablo was a custom-modified version of the standard Lamborghini Diablo, created by German designer Vittorio Strosek. Strosek's design pushed the Diablo's already aggressive styling to new extremes with unique body kits, often featuring distinctive (and controversial) elements like redesigned front ends, different headlight treatments (e.g., small, intense projector lamps), and uniquely placed, faired-in side mirrors. The modifications were primarily aesthetic and aerodynamic, aiming for a more "seamless" and "extreme" look, though some performance tweaks might have been offered.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <h4 class="text-2xl font-roboto-condensed text-white mb-4">Production:</h4>
+                        <p class="text-base md:text-lg leading-relaxed mb-6">
+                            Very few modified by Strosek.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="lamborghini-strosek-diablo-reason-banned" class="highlight-box p-6 md:p-8 mb-12">
+                    <h4 class="text-xl md:text-2xl font-roboto-condensed text-secondary-accent mb-4 flex items-center">
+                        <i class="fas fa-ban text-2xl md:text-3xl mr-3" aria-hidden="true"></i> Reason Banned:
+                    </h4>
+                    <p class="text-lg font-bold text-white mb-2">Category: Modified Vehicle Non-Compliance (US)</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Strosek Diablo modifications, particularly the altered headlights and side mirrors, did not comply with US Department of Transportation (USDOT) regulations. It was deemed "too extreme" by US authorities and considered unsafe for US roads due to these design changes and its potent performance. The 2000 and 2001 model year Strosek Diablos were specifically mentioned as banned, though older versions might now be importable under the 25-year rule. This highlights how aftermarket modifications can render an otherwise (conditionally) legal car illegal.
+                    </p>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Gallery</h4>
+                    <div class="carousel-container relative w-full h-64 md:h-96">
+                        <div class="carousel-images absolute inset-0">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Strosek+Diablo+Gallery+1" alt="Lamborghini Strosek Diablo Gallery Image 1">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Strosek+Diablo+Gallery+2" alt="Lamborghini Strosek Diablo Gallery Image 2">
+                            <img class="lazy-load" data-src="https://placehold.co/1200x600/4a4a4a/e0e0e0?text=Strosek+Diablo+Gallery+3" alt="Lamborghini Strosek Diablo Gallery Image 3">
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">3D Model Viewer</h4>
+                    <div class="w-full h-64 md:h-96 bg-card-bg rounded-lg flex items-center justify-center text-text-body text-center shadow-md threejs-canvas">
+                        *(Interactive 3D model of Lamborghini Strosek Diablo coming soon!)*
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-2xl font-roboto-condensed text-white mb-4">Legacy & Impact</h4>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        The Strosek Diablo is a prime example of how aftermarket modifications, even to already extreme cars, can lead to legal issues. It represents a fascinating chapter in automotive customization and the clash between artistic vision and regulatory compliance.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 p-6 card">
+                    <button id="like-lamborghini-strosek-diablo" class="like-button text-text-body hover:text-primary-accent transition-colors duration-200 focus:outline-none" aria-label="Like Lamborghini Strosek Diablo">
+                        <i class="fas fa-heart text-3xl" aria-hidden="true"></i>
+                        <span id="lamborghini-strosek-diablo-likes" class="ml-2 text-xl font-bold">0</span> Likes
+                    </button>
+                    <button id="save-lamborghini-strosek-diablo" class="save-button btn-primary flex items-center" aria-label="Save Lamborghini Strosek Diablo to my garage">
+                        <i class="fas fa-bookmark mr-2" aria-hidden="true"></i> Save to Garage
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-banned" class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed text-white mb-12">Why These Legends Were Banned</h2>
+                <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-12">
+                    The reasons for a car being deemed "banned" are varied, often stemming from a clash between uncompromised engineering and strict automotive regulations. Here are the common categories:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="card p-6 text-left">
+                        <h3 class="text-xl md:text-2xl font-roboto-condensed text-primary-accent mb-4 flex items-center"><i class="fas fa-car-crash mr-3" aria-hidden="true"></i> Safety & Roadworthiness</h3>
+                        <p class="text-base md:text-lg leading-relaxed mb-4">
+                            Many high-performance, track-focused vehicles lack fundamental safety features required for public roads, such as compliant airbags, pedestrian impact protection, or crash structures designed for street collisions. Their extreme designs often prioritize aerodynamics and weight reduction over road safety standards.
+                        </p>
+                        <p class="text-sm text-text-body">
+                            **Examples:** Ferrari FXX, Lamborghini Sesto Elemento.
+                        </p>
+                    </div>
+                    <div class="card p-6 text-left">
+                        <h3 class="text-xl md:text-2xl font-roboto-condensed text-primary-accent mb-4 flex items-center"><i class="fas fa-smog mr-3" aria-hidden="true"></i> Emissions & Noise Regulations</h3>
+                        <p class="text-base md:text-lg leading-relaxed mb-4">
+                            Unrestricted race engines produce significant emissions and noise levels far exceeding legal limits for road vehicles. Manufacturers often don't bother to homologate these cars for road use, as it would compromise their intended extreme performance.
+                        </p>
+                        <p class="text-sm text-text-body">
+                            **Examples:** Pagani Zonda R, Aston Martin Vulcan, Bugatti Bolide.
+                        </p>
+                    </div>
+                    <div class="card p-6 text-left">
+                        <h3 class="text-xl md:text-2xl font-roboto-condensed text-primary-accent mb-4 flex items-center"><i class="fas fa-certificate mr-3" aria-hidden="true"></i> Homologation & Certification Issues</h3>
+                        <p class="text-base md:text-lg leading-relaxed mb-4">
+                            For a car to be legally sold and driven on public roads in a specific country, it must undergo a rigorous certification process (homologation) to prove compliance with local laws. Limited production runs or unique modifications often make this process cost-prohibitive or impossible.
+                        </p>
+                        <p class="text-sm text-text-body">
+                            **Examples:** Mercedes-Benz CLK GTR (US), Jaguar XJ220S (US).
+                        </p>
+                    </div>
+                    <div class="card p-6 text-left">
+                        <h3 class="text-xl md:text-2xl font-roboto-condensed text-primary-accent mb-4 flex items-center"><i class="fas fa-exclamation-triangle mr-3" aria-hidden="true"></i> Manufacturer's Discretion / Too Extreme</h3>
+                        <p class="text-base md:text-lg leading-relaxed mb-4">
+                            In rare cases, the manufacturer itself decides a car is simply too powerful, raw, or impractical for safe public road use, even if it could theoretically be made legal. This demonstrates an ultimate commitment to track performance over street usability.
+                        </p>
+                        <p class="text-sm text-text-body">
+                            **Examples:** TVR Cerbera Speed 12.
+                        </p>
+                    </div>
+                    <div class="card p-6 text-left md:col-span-2">
+                        <h3 class="text-xl md:text-2xl font-roboto-condensed text-primary-accent mb-4 flex items-center"><i class="fas fa-wrench mr-3" aria-hidden="true"></i> Aftermarket Modification Non-Compliance</h3>
+                        <p class="text-base md:text-lg leading-relaxed mb-4">
+                            Sometimes, a car that was originally road-legal becomes "banned" due to aftermarket modifications that violate safety, lighting, or other regulations. This is particularly common with highly customized vehicles.
+                        </p>
+                        <p class="text-sm text-text-body">
+                            **Examples:** Lamborghini Strosek Diablo.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center text-text-body mt-4">*(More detailed infographics and regulatory breakdowns coming soon!)*</p>
+            </div>
+        </section>
+
+        <section id="tech-showcase" class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed text-white mb-12">Tech Showcase: Powering the Experience</h2>
+                <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-12">
+                    This website isn't just about powerful cars; it's also built with powerful web technologies to deliver an immersive experience.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card p-6">
+                        <h3 class="text-2xl font-roboto-condensed text-primary-accent mb-4">Interactive 3D Models (Three.js)</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Explore the intricate details of these machines with interactive 3D models. Drag to rotate, zoom in, and discover hidden features.
+                        </p>
+                        <div class="w-full h-48 bg-gray-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cube text-white text-5xl" aria-hidden="true"></i>
+                        </div>
+                        <p class="text-sm text-text-body mt-4">*(Currently implemented for Ferrari FXX, more coming soon!)*</p>
+                    </div>
+                    <div class="card p-6">
+                        <h3 class="text-2xl font-roboto-condensed text-primary-accent mb-4">Dynamic Animations (Lottie)</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Smooth, lightweight animations bring technical concepts and UI elements to life without compromising performance.
+                        </p>
+                        <lottie-player id="lottie-tech-animation" src="https://assets2.lottiefiles.com/packages/lf20_t05o4t2r.json" background="transparent" speed="1" style="width: 100%; height: 200px;" loop autoplay aria-label="Gear animation demonstrating dynamic animations"></lottie-player>
+                        <p class="text-sm text-text-body mt-4">*(Placeholder animation: a simple gear animation)*</p>
+                    </div>
+                    <div class="card p-6 md:col-span-2">
+                        <h3 class="text-2xl font-roboto-condensed text-primary-accent mb-4">Real-time Data & User Engagement (Firebase)</h3>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Interact with the content in real-time. Like your favorite cars, save them to your personal garage, and engage in discussions through live comment sections. All powered by Google's robust Firebase platform.
+                        </p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <i class="fas fa-heart text-primary-accent text-4xl" aria-hidden="true"></i>
+                            <i class="fas fa-bookmark text-primary-accent text-4xl" aria-hidden="true"></i>
+                            <i class="fas fa-comments text-primary-accent text-4xl" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="my-forbidden-garage" class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed text-white mb-12">My Forbidden Garage</h2>
+                <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+                    Here are the legendary machines you've saved to your personal collection.
+                </p>
+                <div id="saved-cars-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <p class="text-text-body md:col-span-3">Loading your garage...</p>
+                </div>
+                <p class="text-sm text-text-body mt-8">Your unique user ID: <span id="user-id-display" class="font-bold text-primary-accent">Loading...</span></p>
+            </div>
+
+            
+        </section>
+
+        <section id="community" class="py-16 md:py-24 bg-background px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-roboto-condensed text-white mb-4">Community</h2>
+                <p class="text-lg text-text-body">*(Join the discussion, share your thoughts, and save your favorites! More community features like polls and forums coming soon.)*</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black py-12 px-4 md:px-8 text-text-body text-center">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="text-left md:text-left">
+                <h3 class="text-xl font-roboto-condensed text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary-accent transition-colors duration-200">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary-accent transition-colors duration-200">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary-accent transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-primary-accent transition-colors duration-200">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <a href="#" class="text-3xl font-orbitron text-white hover:text-primary-accent transition-colors duration-300">
+                    UNLEASHED ICONS
+                </a>
+                <p class="text-sm mt-4">&copy; 2025 Unleashed Icons. All rights reserved.</p>
+            </div>
+            <div class="text-right md:text-right">
+                <h3 class="text-xl font-roboto-condensed text-white mb-4">Follow Us</h3>
+                <div class="flex justify-center md:justify-end space-x-4">
+                    <a href="#" class="text-text-body hover:text-primary-accent transition-colors duration-200 text-2xl" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="text-text-body hover:text-primary-accent transition-colors duration-200 text-2xl" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="text-text-body hover:text-primary-accent transition-colors duration-200 text-2xl" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="text-text-body hover:text-primary-accent transition-colors duration-200 text-2xl" aria-label="Follow us on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-accent text-white p-3 rounded-full shadow-lg hover:bg-button-hover transition-all duration-300 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" aria-label="Back to top">
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </button>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
